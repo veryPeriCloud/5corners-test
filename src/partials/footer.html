@@ -1,0 +1,70 @@
+<footer class="footer">
+  <div class="container footer__container">
+    <button class="footer__btn-up btn-reset" type="button" aria-label="Наверх">
+      <svg>
+        <use xlink:href="./img/sprite.svg#arrow-up"></use>
+      </svg>
+    </button>
+    <div class="footer__top">
+      <div class="footer__subscription subscription">
+        <h2 class="subscription__title">Скидка 10% за подписку на наши новости</h2>
+        <form action="mail.php" method="POST" class="subscription__form form" enctype="multipart/form-data" id="subscription">
+          <div class="subscription__label">
+            <input type="text" class="subscription__input" name="email" placeholder="example@mail.ru">
+            <button class="subscription__btn btn-reset" data-graph-path="subscribe">
+              <svg>
+                <use xlink:href="./img/sprite.svg#search"></use>
+              </svg>
+              Подписаться
+            </button>
+          </div>
+          <span class="subscription__agree">
+            Нажимая кнопку &#8220;Подписаться&#8221;, Вы&nbsp;соглашаетесь с&nbsp;
+            <a href="#" class="subscription__link" target="_blank">политикой конфиденциальности</a>
+          </span>
+        </form>
+      </div>
+
+      <div class="footer__links">
+        <ul class="footer__list list-reset">
+          <li class="footer__item"><a href="#" class="footer__link">Каталог</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">О компании</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Магазины</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Новости</a></li>
+        </ul>
+
+        <ul class="footer__list list-reset">
+          <li class="footer__item"><a href="#" class="footer__link">Оплата и доставка</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Условия возврата</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Бонусная система</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Подарочный сертификат</a></li>
+        </ul>
+
+        <ul class="footer__list list-reset">
+          <li class="footer__item"><a href="#" class="footer__link">Telegram</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">WhatsApp</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Youtube</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">VK</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__rights">
+        &copy;&nbsp;All rights reserved
+      </span>
+
+      <a href="#" class="footer__offer">Публичная оферта</a>
+
+      <a href="#" class="footer__offer">Политика конфиденциальности</a>
+
+      <div class="footer__dev">
+        <span class="footer__dev-text">Сделано в студии</span>
+        <a href="https://5corners.ru/" target="_blank" class="footer__dev-link">
+          <img src="img/5corners-logo.svg" alt="Логотип 5 углов" class="footer__dev-logo">
+          5 углов
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

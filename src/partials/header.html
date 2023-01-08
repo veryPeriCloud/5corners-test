@@ -1,0 +1,64 @@
+<header class="header">
+  <div class="container header__container">
+    <nav class="nav" data-menu="menu">
+      <ul class="nav__list list-reset">
+        <li class="nav__item" data-menu-item="menu-item"><a href="#" class="nav__link">Каталог</a></li>
+        <li class="nav__item" data-menu-item="menu-item"><a href="#" class="nav__link">О компании</a></li>
+        <li class="nav__item" data-menu-item="menu-item"><a href="#" class="nav__link">Магазины</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" class="header__logo">
+      <img src="./img/logo.svg" alt="Логотип">
+    </a>
+
+    <div class="header__icons icons">
+      <ul class="icons__list list-reset">
+        <li class="icons__item search">
+          <form action="#" class="search__form">
+            <div class="search__wrapper">
+              <input type="text" class="search__input" placeholder="Поиск...">
+              <button class="search__btn-close btn-reset" type="button">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#x"></use>
+                </svg>
+              </button>
+            </div>
+            <button class="icons__search-btn search__btn btn-reset" type="button">
+              <svg>
+                <use xlink:href="./img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </li>
+        <li class="icons__item">
+          <a href="#" class="icons__link profile">
+            <svg>
+              <use xlink:href="./img/sprite.svg#account"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="icons__item">
+          <a href="#" class="icons__link icons__link--favorites">
+            <svg>
+              <use xlink:href="./img/sprite.svg#favorite"></use>
+            </svg>
+            <span class="favorites__count">8</span>
+          </a>
+        </li>
+        <li class="icons__item">
+          <a href="#" class="icons__link icons__link--cart">
+            <svg>
+              <use xlink:href="./img/sprite.svg#bag"></use>
+            </svg>
+            <span class="cart__count">4</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="burger btn-reset" type="button" data-burger="burger">
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>

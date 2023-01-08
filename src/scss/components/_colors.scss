@@ -1,0 +1,88 @@
+.colors {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  &__btn {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: border-color .3s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      transition: border-color .3s ease-in-out;
+    }
+
+    &--active {
+      border-color: var(--light-color);
+      &::before {
+        border-color: var(--dark-color);
+      }
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__value,
+  &__value::before {
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+  }
+
+  &__value {
+    display: block;
+    width: 16px;
+    height: 16px
+  }
+
+  &__value::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+  }
+
+  &__label:focus &__value::before,
+  &__radio:checked~&__value::before {
+    border-color: var(--dark-color);
+  }
+
+  &__label:focus &__value,
+  &__radio:checked~&__value {
+    border: 1px solid var(--light-color);
+  }
+
+  &__label:hover &__value::before {
+    border-color: var(--light-grey);
+  }
+
+  @media (max-width: 424px) {
+    &__item:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}

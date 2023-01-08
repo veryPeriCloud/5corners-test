@@ -1,0 +1,43 @@
+.counter {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  width: 153px;
+  height: 42px;
+  background-color: var(--background-grey);
+  border-radius: 5px;
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 131%;
+    color: var(--dark-color);
+    text-align: center;
+    outline: none;
+    background-color: var(--background-grey);
+  }
+
+  &__btn {
+    width: 32px;
+    height: 32px;
+    outline: none;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        color: var(--text-grey);
+      }
+    }
+  }
+
+  @media (max-width: 420px) {
+    width: 146px;
+  }
+}

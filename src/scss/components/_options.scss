@@ -1,0 +1,13 @@
+.options {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+
+  &__params {
+    color: var(--text-grey);
+  }
+
+  &__value {
+    color: var(--dark-color);
+  }
+}

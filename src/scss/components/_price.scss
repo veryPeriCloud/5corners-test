@@ -1,0 +1,36 @@
+.price,
+.sum {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+
+  &__discount {
+    margin-bottom: 3px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 125%;
+    text-decoration-line: line-through;
+    color: var(--text-grey);
+  }
+
+  &__total {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    font-feature-settings: 'kern' off;
+    color: var(--dark-color);
+  }
+
+  @media (max-width: 424px) {
+    &__discount {
+      margin-bottom: 0;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    &__total {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}

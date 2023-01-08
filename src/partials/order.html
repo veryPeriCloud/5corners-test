@@ -1,0 +1,395 @@
+<section class="order">
+  <div class="container order__container">
+    <form action="mail.php" class="order__form grid" enctype="multipart/form-data" method="POST">
+      <div class=" order__block order__cart order__left-block">
+        <div class="order__top">
+          <h1 class="order__title">Оформление заказа</h1>
+          <div class="order__account">
+            <span>Есть аккаунт?</span>
+            <a href="#" class="order__account-link">Войти</a>
+          </div>
+        </div>
+
+        <h3 class="order__subtitle">
+          <span class="order__count">3</span> товара на сумму&nbsp;<span class="order__amount">25&nbsp;000&nbsp;₽</span>
+        </h3>
+
+        <ul class="order__list list-reset">
+          <li class="order__item product" id="512-05">
+            <div class="product__info">
+              <div class="product__img ">
+                <img src="./img/jacket.jpg" alt="Утепленная стеганная куртка женская Top Hills">
+              </div>
+              <div class="product__content">
+                <a href="#" class="product__title">
+                  Утепленная стеганная куртка женская Top Hills
+                </a>
+
+                <div class="product__description">
+                  <div class="product__options options">
+                    <span class="options__params">Артикул</span>
+                    <span class="options__value" data-value="code">512-05</span>
+                  </div>
+                  <div class="product__options options">
+                    <span class="options__params">Сезон</span>
+                    <span class="options__value" data-value="season">Осень-зима</span>
+                  </div>
+
+                  <ul class="product__size size list-reset">
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-512-05" value="xs" checked>
+                        <span class="size__value">XS</span>
+                      </label>
+                    </li>
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-512-05" value="s" checked>
+                        <span class="size__value">S</span>
+                      </label>
+                    </li>
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-512-05" value="m">
+                        <span class="size__value">M</span>
+                      </label>
+                    </li>
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-512-05" value="l">
+                        <span class="size__value">L</span>
+                      </label>
+                    </li>
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-512-05" value="xl">
+                        <span class="size__value">XL</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="product__colors colors list-reset">
+                    <li class="colors__item">
+                      <label class="colors__label">
+                        <input class="colors__radio visually-hidden" type="radio" name="color" value="#444444" checked>
+                        <span class="colors__value" style="background-color: #444444;">
+                        </span>
+                      </label>
+                    </li>
+                    <li class="colors__item">
+                      <label class="colors__label">
+                        <input class="colors__radio visually-hidden" type="radio" name="color" value="#106DA1">
+                        <span class="colors__value" style="background-color: #106DA1;">
+                        </span>
+                      </label>
+                    </li>
+                    <li class="colors__item">
+                      <label class="colors__label">
+                        <input class="colors__radio visually-hidden" type="radio" name="color" value="#AE6D0C">
+                        <span class="colors__value" style="background-color: #AE6D0C;">
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="product__amount">
+              <div class="product__price price">
+                <span class="price__discount">12 000&nbsp;₽</span>
+                <span class="price__total">10 000&nbsp;₽</span>
+              </div>
+
+              <div class="product__counter counter">
+                <button class="counter__btn btn-reset" type="button" data-direction="minus" aria-label="Убрать один товар">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#minus"></use>
+                  </svg>
+                </button>
+
+                <input class="counter__input input-reset" type="text" value="2" name="count">
+
+                <button class="counter__btn btn-reset" type="button" data-direction="plus" aria-label="Добавить один товар">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#plus"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="product__sum sum">
+                <span class="sum__discount">24 000&nbsp;₽</span>
+                <span class="sum__total">20 000&nbsp;₽</span>
+              </div>
+            </div>
+
+            <button class="product__del button-del btn-reset" type="button" aria-label="Удалить товар из корзины">
+              <svg>
+                <use xlink:href="./img/sprite.svg#x"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="order__item product-deleted">
+            <p class="product-deleted__info">
+              Товар <a href="#" class="product-deleted__title">Наименование товара </a> был удален из корзины.
+            </p>
+            <button class="product-deleted__btn btn-reset">Восстановить</button>
+            <button class="product__del button-del btn-reset" type="button" aria-label="Удалить товар из корзины">
+              <svg>
+                <use xlink:href="./img/sprite.svg#x"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li class="order__item product" id="891-256">
+            <div class="product__info">
+              <div class="product__img ">
+                <img src="./img/hat.jpg" alt="Вязанная шапка Zolla">
+              </div>
+              <div class="product__content">
+                <a href="#" class="product__title">
+                  Вязанная шапка Zolla
+                </a>
+                <div class="product__description">
+                  <div class="product__options options">
+                    <span class="options__params">Артикул</span>
+                    <span class="options__value" data-value="code">891-256</span>
+                  </div>
+                  <div class="product__options options">
+                    <span class="options__params">Сезон</span>
+                    <span class="options__value" data-value="season">Демисезон</span>
+                  </div>
+
+                  <ul class="product__size size list-reset">
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-891-256" value="xs" checked>
+                        <span class="size__value">XS</span>
+                      </label>
+                    </li>
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-891-256" value="s" checked>
+                        <span class="size__value">S</span>
+                      </label>
+                    </li>
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-891-256" value="m">
+                        <span class="size__value">M</span>
+                      </label>
+                    </li>
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-891-256" value="l">
+                        <span class="size__value">L</span>
+                      </label>
+                    </li>
+                    <li class="size__item">
+                      <label class="size__label">
+                        <input class="size__radio visually-hidden" type="radio" name="size-891-256" value="xl">
+                        <span class="size__value">XL</span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="product__colors colors list-reset">
+                    <li class="colors__item">
+                      <label class="colors__label">
+                        <input class="colors__radio visually-hidden" type="radio" name="color2" value="#444444" checked>
+                        <span class="colors__value" style="background-color: #444444;">
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__amount">
+              <div class="product__price price">
+                <span class="price__discount"></span>
+                <span class="price__total">500 ₽</span>
+              </div>
+
+              <div class="product__counter counter">
+                <button class="counter__btn btn-reset" type="button" data-direction="minus" aria-label="Убрать один товар">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#minus"></use>
+                  </svg>
+                </button>
+
+                <input class="counter__input input-reset" type="text" value="1" name="count">
+
+                <button class="counter__btn btn-reset" type="button" data-direction="plus" aria-label="Добавить один товар">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#plus"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="product__sum sum">
+                <span class="sum__discount"></span>
+                <span class="sum__total">500 ₽</span>
+              </div>
+            </div>
+
+            <button class="product__del button-del btn-reset" type="button" aria-label="Удалить товар из корзины">
+              <svg>
+                <use xlink:href="./img/sprite.svg#x"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="order__block order__total-block order__right-block">
+        <ul class="order__total list-reset">
+          <li class="order__total-item">
+            <span class="order__total-params">Товары</span>
+            <span class="order__total-value">24 500 ₽</span>
+          </li>
+          <li class="order__total-item order__total-item--mb">
+            <span class="order__total-params">Скидка</span>
+            <span class="order__total-value order__total-value--accent">-4 500 ₽</span>
+          </li>
+          <li class="order__total-item order__total-item--small order__total-item--mb">
+            <span class="order__total-params">Акции</span>
+            <span class="order__total-value order__total-value--accent order__total-value--small">-4 000 ₽</span>
+          </li>
+          <li class="order__total-item order__total-item--small">
+            <span class="order__total-params">Промокод</span>
+            <span class="order__total-value order__total-value--accent order__total-value--small">-500 ₽</span>
+          </li>
+          <li class="order__total-item">
+            <span class="order__total-params">Доставка</span>
+            <span class="order__total-value">200 ₽</span>
+          </li>
+          <li class="order__total-item">
+            <div class="order__total-toggle toggle">
+              <div class="toggle__descr">
+                <span class="toggle__text">Получить товар со склада</span>
+                <span class="toggle__text toggle__text--small">Сроки получения могут измениться</span>
+              </div>
+              <label class="toggle__label">
+                <input type="checkbox" name="storage" class="toggle__input">
+                <span class="toggle__checker"></span>
+              </label>
+            </div>
+          </li>
+          <li class="order__total-item order__total-item--large">
+            <span class="order__total-params">Итого:</span>
+            <span class="order__total-value">20 700 ₽</span>
+          </li>
+          <li class="order__total-item">
+            <div class="form__label order__promo-label">
+              <input type="text" class="order__total-input" name="promo" id="promo" placeholder="Введите промокод">
+              <button class="order__promo-btn btn-reset" type="button">Применить</button>
+              <span class="order__promo-info"></span>
+            </div>
+          </li>
+        </ul>
+        <button class="order__btn-submit btn-reset" type="submit" data-graph-path="submit">Оформить заказ</button>
+        <div class="order__policy">
+          Нажимая кнопку &ldquo;Оформить заказ&rdquo;, Вы&nbsp;соглашаетесь с&nbsp;политикой конфиденциальности.
+        </div>
+      </div>
+
+      <div class="order__block order__details order__left-block">
+        <div class="order__data-form form">
+          <h3 class="order__subtitle">
+            Контактные данные
+          </h3>
+
+          <ul class="form__list list-reset">
+            <li class="form__item">
+              <label class="form__label">
+                <input class="form__input" type="text" id="name" name="name" placeholder="Имя">
+                <span class="form__value">Имя</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label">
+                <input class="form__input" type="text" id="lastname" name="lastname" placeholder="Фамилия">
+                <span class="form__value">Фамилия</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label">
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="Телефон">
+                <span class="form__value">Телефон</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label class="form__label">
+                <input class="form__input" type="text" id="email" name="email" placeholder="Email">
+                <span class="form__value">Email</span>
+              </label>
+            </li>
+            <li class="form__item form__item--large">
+              <div class="form__label">
+                <textarea class="form__input form__input--address" name="address" id="address" placeholder="Адрес доставки"></textarea>
+                <span class="form__value">Адрес доставки</span>
+                <button class="form__search-btn btn-reset" type="button" aria-label="search">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="form__suggestions suggestions" id="address-suggestions"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="order__map order__right-block" id="map"></div>
+
+        <div class="order__options">
+          <div class="order__payment payment">
+            <h3 class="order__subtitle">
+              Оплата
+            </h3>
+
+            <ul class="payment__list list-reset">
+              <li class="payment__item">
+                <label class="payment__label">
+                  <input class="payment__radio visually-hidden" type="radio" name="payment" value="cash" checked>
+                  <span class="payment__value">
+                    Наличными курьеру
+                  </span>
+                </label>
+              </li>
+              <li class="payment__item">
+                <label class="payment__label">
+                  <input class="payment__radio visually-hidden" type="radio" name="payment" value="card">
+                  <span class="payment__value">
+                    Картой курьеру
+                  </span>
+                </label>
+              </li>
+              <li class="payment__item">
+                <label class="payment__label">
+                  <input class="payment__radio visually-hidden" type="radio" name="payment" value="online">
+                  <span class="payment__value">
+                    Картой онлайн
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="order__comments">
+            <h3 class="order__subtitle">
+              Комментарий к заказу
+            </h3>
+
+            <div class="comments__label">
+              <textarea class="comments__input comments__input--area" name="comments" placeholder="Комментарий к заказу"></textarea>
+              <span class="comments__value">Комментарий к заказу</span>
+            </div>
+            <span class="comments__symbols-count">Использовано <span class="symbols-count">0</span>/142 символов</span>
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</section>
